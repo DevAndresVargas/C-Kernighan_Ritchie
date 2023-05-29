@@ -2,7 +2,7 @@
 	Programa de conversion de Fahrenheit a Celsius
 
    capitulo 1, variables, expresiones e iteraciones
-   herramientas: getchar,putchar
+   modificacion: contar caracteres
 
 */
 
@@ -11,12 +11,11 @@
 
 int main()
 {
-	long nc;
-	nc = 0;
+    long nc;
+    nc = 0;
 
+    while (getchar()!=EOF) //NOTE: si solo hay una instruccion se puede precindir de {}
+        ++nc;
 
-   while (getchar()!=EOF)
-		++nc;
-
-	printf("%ld\n",nc);
+    printf("%ld\n",nc);
 }
